@@ -1,0 +1,226 @@
+/* L'intégralité de notre contenu */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Partie header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 10vh;
+    background-color: #9a7cb780;
+    color: #fff;
+}
+
+/* Partie présentation */
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    text-align: center;
+    background: linear-gradient(
+        #9a7cb780 0%,
+        #9a7cb780 50%,
+        #9a7cb7 100%
+    );
+}
+
+#presentation img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px #000000;
+}
+
+#presentation h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+#presentation span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* Partie à propos de moi */
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(
+        #9a7cb7 0%,
+        #9a7cb7 50%,
+        #9a7cb780 100%
+    );
+}
+
+#about-me div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#about-me h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#about-me p {
+    width: 40%;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+#about-me img {
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px #000000;
+}
+
+/* Partie mes passions */
+
+#passions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(
+        #9a7cb780 0%,
+        #9a7cb780 50%,
+        #9a7cb7 100%
+    );
+}
+
+#passions h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.passions-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.passions-group div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.passions-group img {
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    box-shadow: 0 0 10px #000000;
+}
+
+.passions-group p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* Partie footer */
+
+footer {
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #9a7cb7;
+    color: #fff;
+}
+
+/* J'applique à un autre format d'écran */
+@media screen and (max-width: 768px) {
+    #about-me div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #presentation h2 {
+        font-size: 2rem;
+    }
+
+    #presentation span {
+        font-size: 1rem;
+    }
+
+    #about-me h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #about-me p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #about-me img {
+        display: none;
+    }
+
+    #passions h2 {
+        font-size: 2rem;
+    }
+    
+    #passions-group {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .passions-group div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .passions-group img {
+        width: 80%;
+        height: 400px;
+    }
+
+    .passions-group p {
+        font-size: 1rem;
+    }
+}
